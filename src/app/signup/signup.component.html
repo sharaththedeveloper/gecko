@@ -1,0 +1,17 @@
+<div class="fullscreen">
+  <mat-card class="simplecard">
+      <mat-card-title>Sign Up</mat-card-title>
+      <mat-card-content>
+          <form class="example-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Email" formControlName="username" type="email">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Password" type="Password" formControlName="passwrd">
+              </mat-form-field>
+              <button  type="submit" mat-raised-button color="primary" >Sign up</button>
+              <a mat-button color="primary" style="float: right;" routerLink="/signin">Already Have Account?</a>
+            </form>
+      </mat-card-content>
+  </mat-card>
+</div>
