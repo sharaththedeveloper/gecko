@@ -1,7 +1,9 @@
-
-<mat-drawer-container class="example-container">
+<!-- 
+<mat-drawer-container class="example-container" style="padding: 3rem;">
         <mat-drawer mode="side" opened class="sidenav">
-                <button mat-icon-button>Home</button>
+                <button mat-icon-button aria-label="Example icon-button with a heart icon">
+                        <mat-icon color="primary">favorite</mat-icon>
+                      </button>
         </mat-drawer>
         <mat-drawer-content>
             <div class="ncard">
@@ -11,4 +13,23 @@
            
       
         </mat-drawer-content>
-      </mat-drawer-container>
+      </mat-drawer-container> -->
+<div class="master">
+    <div class="left" [class.mat-elevation-z1]="true">
+        <div class="list">
+                <button mat-icon-button aria-label="Example icon-button with a heart icon">
+                        <mat-icon >dashboard</mat-icon>
+                      </button>
+                <button mat-icon-button aria-label="Example icon-button with a heart icon">
+                        <mat-icon >view_module</mat-icon>
+                      </button>
+                <button mat-icon-button aria-label="Example icon-button with a heart icon">
+                        <i class="im im-gear"></i>
+                      </button>
+        </div>
+    </div>
+    <div class="right">
+    <router-outlet></router-outlet>
+        
+    </div>
+</div>

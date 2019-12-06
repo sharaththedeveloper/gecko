@@ -2,6 +2,7 @@ import { UserComponent } from './user/user.component';
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ProjectComponent } from './user/project/project.component';
 
 
 const routes: Routes = [{ path: '', loadChildren: () => import('./welcome/welcome.module').then(m => m.WelcomeModule) },
@@ -9,8 +10,11 @@ const routes: Routes = [{ path: '', loadChildren: () => import('./welcome/welcom
  { path: 'signup', loadChildren: () => import('./signup/signup.module').then(m => m.SignupModule) },
  { path: 'user', component:UserComponent ,children:[
   { path: '', loadChildren: () => import('./user/home/home.module').then(m => m.HomeModule) },
-  { path: 'project', loadChildren: () => import('./user/project/project.module').then(m => m.ProjectModule) },
+  { path: 'project', component : ProjectComponent , children:[
+    { path: '', loadChildren: () => import('./user/project/issues/issues.module').then(m => m.IssuesModule) },
+  ]},
  ] },
+ 
  
 
 

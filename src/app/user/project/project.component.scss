@@ -31,5 +31,33 @@
       background-color: aquamarine;
   }
   mat-icon{
-    color: white;
+    color: rgb(104, 104, 104);
+  }
+  //new css
+  .master{
+    height:100vh;
+    display: flex;
+  }
+  .list{
+    margin-top:5rem;
+    button{
+      margin:0.75rem auto;
+      display: block;
+    
+    }
+    
+  }
+  .left{
+    width:60px;
+    background-color: #e0e0e0;
+    height: 100vh;
+    position: fixed;
+    left:0;
+  }
+  .right{
+    margin-top:5rem;
+    margin-left: calc(60px + 1.5rem);
+    margin-right: 1.5rem;
+    width:100%;
+    position: relative;
   }

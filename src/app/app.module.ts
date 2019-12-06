@@ -1,3 +1,4 @@
+import { ProjectComponent } from './user/project/project.component';
 import { UserComponent } from './user/user.component';
 
 
@@ -13,7 +14,8 @@ import { MaterialModule } from './material';
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    ProjectComponent
    
   ],
   imports: [

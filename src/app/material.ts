@@ -8,20 +8,21 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { NgModule } from '@angular/core';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 @NgModule({
     imports:[
         MatButtonModule,MatCardModule,
         MatInputModule,MatSnackBarModule,
         MatToolbarModule,MatDialogModule,
         MatIconModule,MatGridListModule,
-        MatSidenavModule
+        MatSidenavModule,DragDropModule
     ],
     exports:[
         MatButtonModule,MatCardModule,
         MatInputModule,MatSnackBarModule,
         MatToolbarModule,MatDialogModule,
         MatIconModule,MatGridListModule,
-        MatSidenavModule
+        MatSidenavModule,DragDropModule
     ]
 })
 export class MaterialModule{}
