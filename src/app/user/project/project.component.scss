@@ -1,0 +1,35 @@
+// .container{
+//     padding: 1rem 3rem;
+// }
+// example-container {
+//     // // width: 400px;
+//     height: 100vh;
+//     background-color: aquamarine;
+//     margin: 10px;
+//     border: 1px solid rgb(36, 25, 25);
+//   }
+  mat-drawer-container{
+    // height: 100vh; 
+    position: relative;;
+    bottom: 0;
+    top:0;
+    left:0;
+    right:0;
+    z-index:-1;
+   
+  }
+  .sidenav{
+      position: fixed;
+      // background-color: #077221;
+      top:4rem;
+  }
+//   mat-drawer-content{
+//       overflow-y: scroll;
+//   }
+  .ncard{
+      padding: 6rem;
+      background-color: aquamarine;
+  }
+  mat-icon{
+    color: white;
+  }

@@ -1,0 +1,20 @@
+<mat-card class="usercard">
+        <mat-card-title style="text-align: center;">Create Project</mat-card-title>
+
+                <!-- <img mat-card-image src="https://kit8.net/images/thumbnails/580/386/detailed/4/celebrate_team@2x.png" alt=""> -->
+      
+        
+        <mat-card-content>
+          <form class="example-form" [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Project Name" formControlName="projectname">
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Project Description" formControlName="projectdescription">
+            </mat-form-field>
+            <button  mat-raised-button color="primary" routerLink="/user/project">Create</button>
+          </form>
+        </mat-card-content>
+    </mat-card>
+   

@@ -1,10 +1,11 @@
 <div class="fullscreen">
-    <mat-card class="simplecard">
+    <mat-card class="simplecard frostglass">
         <mat-card-title>Sign In</mat-card-title>
         <mat-card-content>
             <form class="example-form" [formGroup]="siginForm" (ngSubmit)="onSubmit()">
                 <mat-form-field class="example-full-width">
                   <input matInput placeholder="Email" formControlName="username" type="email">
+                  
                 </mat-form-field>
                 <mat-form-field class="example-full-width">
                   <input matInput placeholder="Password" type="Password" formControlName="passwrd">
@@ -13,6 +14,7 @@
                 <a mat-button color="primary" style="float: right;" routerLink="/signup">Create Account</a>
               </form>
         </mat-card-content>
+        <a mat-button color="primary" style="float: right;" >Forgot Password?</a>
     </mat-card>
  
 </div>
